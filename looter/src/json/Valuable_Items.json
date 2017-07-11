@@ -1,0 +1,1007 @@
+{
+  "compendium": {
+    "-version": "5",
+    "item": [
+      {
+        "name": "10 GP - Azurite",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "An opaque mottled deep blue gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Banded Agate",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "A translucent striped brown, blue, white, or red gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Blue Quartz",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "A transparent pale blue gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Eye Agate",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "A translucent circles of gray, white, brown, blue, or green gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Hematite",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "An opaque gray-black gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Lapis Lazuli",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "An opaque light and dark blue with yellow flecks gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Malachite",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "An opaque striated light and dark green gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Moss Agate",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "A translucent pink or yellow-white with mossy gray or green markings gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Obsidian",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "An opaque black gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Rhodochrosite",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "An opaque light pink gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Tiger Eye",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "A translucent brown with golden center gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "10 GP - Turquoise",
+        "type": "$",
+        "value": "10gp",
+        "weight": "0",
+        "text": [
+          "An opaque light blue-green gemstone worth 10 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Bloodstone",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "An opaque dark gray with red flecks gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Carnelian",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "An opaque orange to red-brown gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Chalcedony",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "An opaque white gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Chrysoprase",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "A translucent green gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Citrine",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "A transparent pale yellow-brown gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Jasper",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "An opaque blue, black, or brown gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Moonstone",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "A translucent white with pale blue glow gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Onyx",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "An opaque bands of black and white, or pure black or white gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Quartz",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "A transparent white, smoky gray, or yellow gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Sardonyx",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "An opaque bands of red and white gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Star rose quartz",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "A translucent rosy stone with white star-shaped center gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "50 GP - Zircon",
+        "type": "$",
+        "value": "50gp",
+        "weight": "0",
+        "text": [
+          "A transparent pale blue-green gemstone worth 50 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "100 GP - Amber",
+        "type": "$",
+        "value": "100gp",
+        "weight": "0",
+        "text": [
+          "A transparent watery gold to rich gold gemstone worth 100 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "100 GP - Amethyst",
+        "type": "$",
+        "value": "100gp",
+        "weight": "0",
+        "text": [
+          "A transparent deep purple gemstone worth 100 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "100 GP - Chrysoberyl",
+        "type": "$",
+        "value": "100gp",
+        "weight": "0",
+        "text": [
+          "A transparent yellow-green to pale green gemstone worth 100 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "100 GP - Coral",
+        "type": "$",
+        "value": "100gp",
+        "weight": "0",
+        "text": [
+          "An opaque crimson gemstone worth 100 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "100 GP - Garnet",
+        "type": "$",
+        "value": "100gp",
+        "weight": "0",
+        "text": [
+          "A transparent red, brown-green, or violet gemstone worth 100 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "100 GP - Jade",
+        "type": "$",
+        "value": "100gp",
+        "weight": "0",
+        "text": [
+          "A translucent light green, deep green, or white gemstone worth 100 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "100 GP - Jet",
+        "type": "$",
+        "value": "100gp",
+        "weight": "0",
+        "text": [
+          "An opaque deep black gemstone worth 100 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "100 GP - Pearl",
+        "type": "$",
+        "value": "100gp",
+        "weight": "0",
+        "text": [
+          "An opaque lustrous white, yellow, or pink gemstone worth 100 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "100 GP - Spinel",
+        "type": "$",
+        "value": "100gp",
+        "weight": "0",
+        "text": [
+          "A transparent red, red-brown, or deep green gemstone worth 100 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "100 GP - Tourmaline",
+        "type": "$",
+        "value": "100gp",
+        "weight": "0",
+        "text": [
+          "A transparent pale green, blue, brown, or red gemstone worth 100 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "500 GP - Alexandrite",
+        "type": "$",
+        "value": "500gp",
+        "weight": "0",
+        "text": [
+          "A transparent dark green gemstone worth 500 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "500 GP - Aquamarine",
+        "type": "$",
+        "value": "500gp",
+        "weight": "0",
+        "text": [
+          "A transparent pale blue-green gemstone worth 500 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "500 GP - Black Pearl",
+        "type": "$",
+        "value": "500gp",
+        "weight": "0",
+        "text": [
+          "An opaque pure black gemstone worth 500 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "500 GP - Blue Spinel",
+        "type": "$",
+        "value": "500gp",
+        "weight": "0",
+        "text": [
+          "A transparent deep blue gemstone worth 500 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "500 GP - Peridot",
+        "type": "$",
+        "value": "500gp",
+        "weight": "0",
+        "text": [
+          "A transparent rich olive green gemstone worth 500 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "500 GP - Topaz",
+        "type": "$",
+        "value": "500gp",
+        "weight": "0",
+        "text": [
+          "A transparent golden yellow gemstone worth 500 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "1000 GP - Black Opal",
+        "type": "$",
+        "value": "1000gp",
+        "weight": "0",
+        "text": [
+          "A translucent dark green with black mottling and golden flecks gemstone worth 1000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "1000 GP - Blue Sapphire",
+        "type": "$",
+        "value": "1000gp",
+        "weight": "0",
+        "text": [
+          "A transparent blue-white to medium blue gemstone worth 1000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "1000 GP - Emerald",
+        "type": "$",
+        "value": "1000gp",
+        "weight": "0",
+        "text": [
+          "A transparent deep bright green gemstone worth 1000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "1000 GP - Fire Opal",
+        "type": "$",
+        "value": "1000gp",
+        "weight": "0",
+        "text": [
+          "A translucent fiery red gemstone worth 1000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "1000 GP - Opal",
+        "type": "$",
+        "value": "1000gp",
+        "weight": "0",
+        "text": [
+          "A translucent pale blue with green and golden mottling gemstone worth 1000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "1000 GP - Star Ruby",
+        "type": "$",
+        "value": "1000gp",
+        "weight": "0",
+        "text": [
+          "A translucent ruby with white star-shaped center gemstone worth 1000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "1000 GP - Star Sapphire",
+        "type": "$",
+        "value": "1000gp",
+        "weight": "0",
+        "text": [
+          "A translucent blue sapphire with white star-shaped center gemstone worth 1000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "1000 GP - Yellow Sapphire",
+        "type": "$",
+        "value": "1000gp",
+        "weight": "0",
+        "text": [
+          "A transparent fiery yellow or yellow-green gemstone worth 1000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "5000 GP - Black Sapphire",
+        "type": "$",
+        "value": "5000gp",
+        "weight": "0",
+        "text": [
+          "A translucent lustrous black with glowing highlights gemstone worth 5000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "5000 GP - Diamond",
+        "type": "$",
+        "value": "5000gp",
+        "weight": "0",
+        "text": [
+          "A transparent blue-white, canary, pink, brown, or blue gemstone worth 5000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "5000 GP - Jacinth",
+        "type": "$",
+        "value": "5000gp",
+        "weight": "0",
+        "text": [
+          "A transparent fiery orange gemstone worth 5000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "5000 GP - Ruby",
+        "type": "$",
+        "value": "5000gp",
+        "weight": "0",
+        "text": [
+          "A transparent clear red to deep crimson gemstone worth 5000 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "25 GP - Silver ewer",
+        "type": "$",
+        "value": "25gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 25 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "25 GP - Carved bone statuette",
+        "type": "$",
+        "value": "25gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 25 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "25 GP - Small gold bracelet",
+        "type": "$",
+        "value": "25gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 25 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "25 GP - Cloth-of-gold vestments",
+        "type": "$",
+        "value": "25gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 25 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "25 GP - Black velvet mask stitched with silver thread",
+        "type": "$",
+        "value": "25gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 25 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "25 GP - Copper chalice with silver filigree",
+        "type": "$",
+        "value": "25gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 25 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "25 GP - Pair of engraved bone dice",
+        "type": "$",
+        "value": "25gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 25 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "25 GP - Small mirror set in a painted wooden frame",
+        "type": "$",
+        "value": "25gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 25 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "25 GP - Embroidered silk handkerchief",
+        "type": "$",
+        "value": "25gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 25 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "25 GP - Gold locket with a painted portrait inside",
+        "type": "$",
+        "value": "25gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 25 gp.",
+          "Source: Dungeon Master's Guide, page 134"
+        ]
+      },
+      {
+        "name": "250 GP - Gold ring set with bloodstones",
+        "type": "$",
+        "value": "250gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 250 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "250 GP - Carved ivory statuette",
+        "type": "$",
+        "value": "250gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 250 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "250 GP - Large gold bracelet",
+        "type": "$",
+        "value": "250gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 250 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "250 GP - Silver necklace with a gemstone pendant",
+        "type": "$",
+        "value": "250gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 250 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "250 GP - Bronze crown",
+        "type": "$",
+        "value": "250gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 250 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "250 GP - Silk robe with gold embroidery",
+        "type": "$",
+        "value": "250gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 250 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "250 GP - Large well-made tapestry",
+        "type": "$",
+        "value": "250gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 250 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "250 GP - Brass mug with jade inlay",
+        "type": "$",
+        "value": "250gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 250 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "250 GP - Box of turquoise animal figurines",
+        "type": "$",
+        "value": "250gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 250 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "250 GP - Gold bird cage with electrum filigree",
+        "type": "$",
+        "value": "250gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 250 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "750 GP - Silver chalice set with moonstones",
+        "type": "$",
+        "value": "750gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 750 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "750 GP - Silver-plated steel longsword with jet set in hilt",
+        "type": "$",
+        "value": "750gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 750 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "750 GP - Carved harp of exotic wood with ivory inlay and zircon gems",
+        "type": "$",
+        "value": "750gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 750 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "750 GP - Small gold idol",
+        "type": "$",
+        "value": "750gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 750 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "750 GP - Gold dragon comb set with red garnets as eyes",
+        "type": "$",
+        "value": "750gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 750 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "750 GP - Bottle stopper cork embossed with gold leaf and set with amethysts",
+        "type": "$",
+        "value": "750gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 750 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "750 GP - Ceremonial electrum dagger with a black pearl in the pommel",
+        "type": "$",
+        "value": "750gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 750 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "750 GP - Silver and gold brooch",
+        "type": "$",
+        "value": "750gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 750 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "750 GP - Obsidian statuette with gold fittings and inlay",
+        "type": "$",
+        "value": "750gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 750 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "750 GP - Painted gold war mask",
+        "type": "$",
+        "value": "750gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 750 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "2500 GP - Fine gold chain set with a fire opal",
+        "type": "$",
+        "value": "2500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 2500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "2500 GP - Old masterpiece painting",
+        "type": "$",
+        "value": "2500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 2500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "2500 GP - Embroidered silk and velvet mantle set with numerous moonstones",
+        "type": "$",
+        "value": "2500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 2500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "2500 GP - Platinum bracelet set with a sapphire",
+        "type": "$",
+        "value": "2500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 2500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "2500 GP - Embroidered glove set with jewel chips",
+        "type": "$",
+        "value": "2500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 2500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "2500 GP - Jeweled anklet",
+        "type": "$",
+        "value": "2500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 2500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "2500 GP - Gold music box",
+        "type": "$",
+        "value": "2500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 2500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "2500 GP - Gold circlet set with four aquamarines",
+        "type": "$",
+        "value": "2500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 2500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "2500 GP - Eye patch with a mock eye set in blue sapphire and moonstone",
+        "type": "$",
+        "value": "2500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 2500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "2500 GP - A necklace string of small pink pearls",
+        "type": "$",
+        "value": "2500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 2500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "7500 GP - Jeweled gold crown",
+        "type": "$",
+        "value": "7500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 7500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "7500 GP - Jeweled platinum ring",
+        "type": "$",
+        "value": "7500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 7500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "7500 GP - Small gold statuette set with rubies",
+        "type": "$",
+        "value": "7500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 7500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "7500 GP - Gold cup set with emeralds",
+        "type": "$",
+        "value": "7500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 7500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "7500 GP - Gold jewelry box with platinum filigree",
+        "type": "$",
+        "value": "7500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 7500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "7500 GP - Painted gold child's sarcophagus",
+        "type": "$",
+        "value": "7500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 7500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "7500 GP - Jade game board with solid gold playing pieces",
+        "type": "$",
+        "value": "7500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 7500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      },
+      {
+        "name": "7500 GP - Bejeweled ivory drinking horn with gold filigree",
+        "type": "$",
+        "value": "7500gp",
+        "weight": "0",
+        "text": [
+          "This art object is worth 7500 gp.",
+          "Source: Dungeon Master's Guide, page 135"
+        ]
+      }
+    ]
+  }
+}
