@@ -14,8 +14,12 @@ export class App {
   }
 
   getMatchingCharacters() {
+    if (this.searchName.trim() === '') {
+      return;
+    }
+
     this.characterGroup = [];
-    this.api.getCharacter({Name: this.searchName.replace(' ', '+')})
+    this.api.getCharacter({Name: this.searchName.trim().replace(' ', '+')})
       .then(response => {
         this.characterGroup = JSON.parse(response).data.results;
         console.log(response);
@@ -23,10 +27,9 @@ export class App {
   }
 
   getSpecificUser(id) {
-    console.log(id);
     this.api.getSpecificUser({ID: id})
       .then(response => {
-        console.log(JSON.parse(response));
+        console.log(response);
       });
   }
 }
