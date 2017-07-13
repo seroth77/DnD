@@ -5,10 +5,20 @@ import { Api } from './api/api';
 export class App {
   constructor(api) {
     this.api = api;
+    this.characterGroup = [];
+    this.searchName = '';
     this.message = 'Hello World!';
   }
 
-  async activate(params, routeConfig, navigationInstruction) {
-    await this.api.getCharacter({Name: 'Lirin'});
+  activate() {
+  }
+
+  getMatchingCharacters() {
+    this.characterGroup = [];
+    this.api.getCharacter({Name: this.searchName.replace(' ', '+')})
+      .then(response => {
+        this.characterGroup = JSON.parse(response).data.results;
+        console.log(response);
+      });
   }
 }
