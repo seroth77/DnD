@@ -1,3 +1,27 @@
 <template>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  
   <h1>${message}</h1>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Loot Generator
+    </div>
+    <div class="panel-body">
+      <div class="dropdown">
+        Info for loot generator
+        <button class="btn btn-default dropdown-toggle" type="button" id="groupCountMenu" aria-haspopup="true" aria-expanded="true" data-toggle="dropdown">
+          Party Size
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="groupCountMenu">
+          <li>2</li>
+        </ul>
+      </div>
+
+      <div class="well">
+        <div class=""></div>
+      </div>
+    </div>
+  </div>
 </template>
