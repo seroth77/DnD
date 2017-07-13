@@ -21,4 +21,12 @@ export class App {
         console.log(response);
       });
   }
+
+  getSpecificUser(id) {
+    console.log(id);
+    this.api.getSpecificUser({ID: id})
+      .then(response => {
+        console.log(JSON.parse(response));
+      });
+  }
 }
