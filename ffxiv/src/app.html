@@ -1,55 +1,14 @@
 <template>
-  <require from="bootstrap/css/bootstrap.css"></require>
-   <require from="resources/value-converters/objectkeys"></require> 
-   <require from="components/searchList/searchList"></require>
+  <require from="components/characterSearch/characterSearch"></require>
+  <require from="components/searchList/searchList"></require>
+  <require from="components/characterStats/characterStats"></require>
    
   <h1>${message}</h1>
 
-  <div class="row">
-    <div class="col-sm-9 col-sm-offset-3">
-      <form class="form-inline">
-        <div class="form-group character-search">
-          <input type="text" class="form-control" placeholder="Name to search" value.bind="searchName" aria-describedby="helpBlockSearch">
-          <span id="helpBlockSearch" class="help-block hidden">Please enter a valid name to search.</span>
-          <button class="btn btn-default search" click.delegate="getMatchingCharacters()">Search</button>
-        </div>
-      </form>
-    </div>
-  </div>
+  <character-search get-matching-characters.call="getMatchingCharacters(value)"></character-search>
 
-  <search-list selected-user-callback.call="getSpecificUser(obj)" character-list.bind="characterGroup"></search-list>
+  <search-list selected-user-callback.call="getSpecificUser(ID)" character-list.bind="characterGroup"></search-list>
 
-  <div class="row characterInfo">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-sm-4">
-            <ul class="nav nav-pills">
-              <li role="jobs" repeat.for="item of specificCharacter.gearsets">
-                <a href="#" click.delegate="loadStats(item)"><img width="30px" src="${item.role.icon}" title="${item.role.abbr}" /></a>
-              </li>
-            </ul>
-            <div class="well stats">
-              <div class="row" repeat.for="stat of stats | objectKeys">
-                <div class="col-sm-3">
-                  ${stat}
-                </div>
-                <div class="col-sm-9">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-
-          </div>
-          
-          <div class="col-sm-4">
-
-          </div>
-        </div>
-      </div>
-    </div>  
-  </div>
+  <character-stats specific-character-gearsets.bind="specificCharacter.gearsets"></character-stats>
+  
 </template>
