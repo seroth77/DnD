@@ -2,13 +2,32 @@
   <require from="components/characterSearch/characterSearch"></require>
   <require from="components/searchList/searchList"></require>
   <require from="components/characterStats/characterStats"></require>
+  <require from="components/characterInfo/characterInfo"></require>
    
   <h1>${message}</h1>
 
   <character-search get-matching-characters.call="getMatchingCharacters(value)"></character-search>
 
   <search-list selected-user-callback.call="getSpecificUser(ID)" character-list.bind="characterGroup"></search-list>
+  
+  <div class="row characterInfo">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-4">
+            <character-stats specific-character-gearsets.bind="specificCharacter.gearsets"></character-stats>
+          </div>
 
-  <character-stats specific-character-gearsets.bind="specificCharacter.gearsets"></character-stats>
+          <div class="col-sm-4">
+            <character-info specific-character-info.bind="specificCharacter.info.data"></character-info>
+          </div>
+          
+          <div class="col-sm-4">
+
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
   
 </template>

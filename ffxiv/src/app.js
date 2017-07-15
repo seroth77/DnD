@@ -16,6 +16,7 @@ export class App {
     this.characterGroup = [];
     this.api.getCharacter({Name: value.trim().replace(' ', '+')})
       .then(response => {
+        console.log(response);
         this.characterGroup = JSON.parse(response).data.results;
       });
   }

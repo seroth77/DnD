@@ -1,37 +1,20 @@
 <template>
-  <require from="resources/value-converters/objectkeys"></require> 
+  <require from="resources/value-converters/objectvalues"></require> 
 
-  <div class="row characterInfo">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-sm-4">
-            <ul class="nav nav-pills">
-              <li role="jobs" repeat.for="item of specificCharacterGearsets">
-                <a href="#" click.delegate="loadStats(item)"><img width="30px" src="${item.role.icon}" title="${item.role.abbr}" /></a>
-              </li>
-            </ul>
-            <div class="well stats">
-              <div class="row" repeat.for="stat of stats | objectKeys">
-                <div class="col-sm-3">
-                  ${stat}
-                </div>
-                <div class="col-sm-9">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-
-          </div>
-          
-          <div class="col-sm-4">
-
-          </div>
-        </div>
+  <ul class="nav nav-pills">
+    <li role="jobs" repeat.for="item of specificCharacterGearsets">
+      <a href="#" click.delegate="loadStats(item)"><img width="30px" src="${item.role.icon}" title="${item.role.abbr}" /></a>
+    </li>
+  </ul>
+  
+  <div class="well stats">
+    <div class="row" repeat.for="stat of stats | objectValues">
+      <div class="col-sm-3">
+        ${stat.key}
       </div>
-    </div>  
-  </div>
+      <div class="col-sm-9">
+        ${stat.value}
+      </div>
+    </div>
+  </div>  
 </template>
