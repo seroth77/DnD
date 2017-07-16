@@ -1,19 +1,54 @@
-import { noView } from 'aurelia-framework';
+import { inject, noView } from 'aurelia-framework';
 import { HttpClient } from 'aurelia-http-client';
+import { EventAggregator } from 'aurelia-event-aggregator';
 
-let httpClient = new HttpClient();
-let characterInfoArray = ['', 'gearsets', 'achievements', 'events', 'tracking', 'achievements_possible', 'achievements_obtained'];
+//let httpClient = new HttpClient();
+//let characterInfoArray = ['', 'gearsets', 'achievements', 'events', 'tracking', 'achievements_possible', 'achievements_obtained'];
+let characterInfoArray = [''];
 const xivdbNameSearchUri = 'https://xivsync.com/character/search?server=Coeurl&name=';
 const xivdbSpecificUri = 'https://api.xivdb.com/character/';
 
 @noView()
+@inject(HttpClient, EventAggregator)
 export class Api {
-  constructor() {
+  constructor(httpClient, eventAggregator) {
+    let _self = this;
+    this.eventAggregator = eventAggregator;
+
+    httpClient.configure(config => {
+      config.withInterceptor({
+        request(request) {
+          console.log(`Intercepted request using method: ${request.method} with URL: ${request.url}`);
+          return request;
+        },
+        requestError(error) {
+          console.log(error);
+          throw error;
+        },
+        response(response) {
+          console.log(response);
+          console.log(`Intercepted response ${response.statusCode} as ${response.statusText}`);
+          return response;
+        },
+        responseError(error) {
+          console.log(error);
+          _self.errorHandler(error);
+          //throw error;
+        }
+      });
+    });
+
     this.searchName = '';
+    this.httpClient = httpClient;
+  }
+
+  errorHandler(error) {
+    console.log('errorHandler Function called.');
+    this.eventAggregator.publish('apiRepsonseError', { response: JSON.parse(error.response) });
   }
 
   getCharacter(params) {
-    return httpClient.get(xivdbNameSearchUri + params.Name)
+    return this.httpClient.get(xivdbNameSearchUri + params.Name)
       .then(data => {
         console.log(JSON.parse(data.response).data.results);
         return data.response;
@@ -23,7 +58,7 @@ export class Api {
   getSpecificUser(params) {
     let sourceNames = [];
     for (let x = 0; x < characterInfoArray.length; x++) {
-      let source = httpClient.get(xivdbSpecificUri + params.ID + (characterInfoArray[x] !== '' ? '?data=' + characterInfoArray[x] : '' ));
+      let source = this.httpClient.get(xivdbSpecificUri + params.ID + (characterInfoArray[x] !== '' ? '?data=' + characterInfoArray[x] : '' ));
       sourceNames.push(source);
     }
 

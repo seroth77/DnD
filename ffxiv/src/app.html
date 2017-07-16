@@ -1,10 +1,15 @@
 <template>
+  <require from="aurelia-kendoui-bridge/notification/notification"></require>
   <require from="components/characterSearch/characterSearch"></require>
   <require from="components/searchList/searchList"></require>
   <require from="components/characterStats/characterStats"></require>
   <require from="components/characterInfo/characterInfo"></require>
    
   <h1>${message}</h1>
+
+  <div class="toastr">
+    <ak-notification id="popupNotification" k-widget.bind="popupNotification">TEST</ak-notification>
+  </div>
 
   <character-search get-matching-characters.call="getMatchingCharacters(value)"></character-search>
 

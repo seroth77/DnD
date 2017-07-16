@@ -1,15 +1,23 @@
 import { inject } from 'aurelia-framework';
 import { Api } from './api/api';
+import { EventAggregator } from 'aurelia-event-aggregator';
 
-@inject(Api)
+@inject(Api, EventAggregator)
 export class App {
-  constructor(api) {
+  constructor(api, eventAggregator) {
     this.api = api;
     this.characterGroup = [];
     this.searchName = '';
     this.stats = {};
     this.specificCharacter = {};
+    this.eventAggregator = eventAggregator;
     this.message = 'Hello World!';
+  }
+
+  attached() {
+    this.eventAggregator.subscribe('apiRepsonseError', response => {
+      console.log(response);
+    });
   }
 
   getMatchingCharacters(value) {
