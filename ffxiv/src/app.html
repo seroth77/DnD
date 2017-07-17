@@ -8,7 +8,10 @@
   <h1>${message}</h1>
 
   <div class="toastr">
-    <ak-notification id="popupNotification" k-widget.bind="popupNotification">TEST</ak-notification>
+    <ak-notification id="popupNotification" 
+      k-stacking.bind="down",
+      k-position.bind="{ top: 10, right: 20 }",
+      k-widget.bind="popupNotification">TEST</ak-notification>
   </div>
 
   <character-search get-matching-characters.call="getMatchingCharacters(value)"></character-search>

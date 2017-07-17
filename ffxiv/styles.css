@@ -10,3 +10,7 @@ body {
   background-color: lightcoral;
   cursor: pointer;
 }
+
+.k-notification-wrap {
+  background-color: lightcoral;
+}

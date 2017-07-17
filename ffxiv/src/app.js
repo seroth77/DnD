@@ -17,6 +17,7 @@ export class App {
   attached() {
     this.eventAggregator.subscribe('apiRepsonseError', response => {
       console.log(response);
+      this.popupNotification.show('There is no data for this user. Please try again.', 'warning');
     });
   }
 
