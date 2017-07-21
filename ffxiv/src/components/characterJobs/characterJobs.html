@@ -1,0 +1,15 @@
+<template>
+  <require from="resources/value-converters/objectvalues"></require>
+  <require from="aurelia-kendoui-bridge/gauges/linear-gauge"></require>
+
+  <div class="character-jobs">
+    <ul class="list-inline">
+      <li repeat.for="classjob of classJobs | objectValues">
+          <div class="character-jobs-icon btn" click.delegate="loadSpecificCharacterJob(classjob.value)">
+            <img src="${classjob.value.data.icon}" width="30px" title="${classjob.value.data.abbr}" alt="icon for ${classjob.value.data.abbr}" />
+            <div class="character-jobs-icon-title">${classjob.value.data.abbr}</div>
+          </div>
+      </li>
+    </ul>
+  </div>
+</template>

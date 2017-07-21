@@ -4,6 +4,8 @@
   <require from="components/searchList/searchList"></require>
   <require from="components/characterStats/characterStats"></require>
   <require from="components/characterInfo/characterInfo"></require>
+  <require from="components/characterJobs/characterJobs"></require>
+  <require from="components/characterHeader/characterHeader"></require>
    
   <h1>${message}</h1>
 
@@ -18,50 +20,20 @@
 
   <search-list selected-user-callback.call="getSpecificUser(ID)" character-list.bind="characterGroup"></search-list>
   
-  <div class="character-header">
+  <character-header header-info.bind="specificCharacter.info.data"></character-header>
+
+  <character-jobs class-jobs.bind="specificCharacter.info.data.classjobs"></character-jobs>
+  
+  <!-- <div class="characterGeneral">
     <div class="row">
-      <div class="col-sm-12">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="character-header-avatar">
-              <img src="${specificCharacter.info.data.avatar}" width="70px" alt="${specificCharacter.info.data.name} avatar image" title="${specificCharacter.info.data.name}'s avatar image" />
-              ${specificCharacter.info.data.name}
-            </div>  
-          </div>
-          <div class="col-sm-3">
-            <div class="character-header-race">
-               Race: ${specificCharacter.info.data.race} (${specificCharacter.info.data.gender})
-            </div>
-            <div class="character-header-server">
-              Server: ${specificCharacter.info.data.server}
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="character-header-clan">
-              Clan: ${specificCharacter.info.data.clan}
-            </div>
-            <div class="character-header-nameday">
-              ${specificCharacter.info.data.nameday}
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="character-header-city">
-              <img src="${specificCharacter.info.data.city.icon}" alt="${specificCharacter.info.data.city.name}" title="${specificCharacter.info.data.name}'s home city" />
-              ${specificCharacter.info.data.city.name}
-            </div>
-            <div class="character-header-grand-company">
-              <img src="${specificCharacter.info.data.grand_company.icon}" alt="${specificCharacter.info.data.grand_company.name}" title="${specificCharacter.info.data.name}'s Grand Company ${specificCharacter.info.data.grand_company.name}" />
-              ${specificCharacter.info.data.grand_company.rank}
-            </div>
-          </div>
-        </div>
+      <div class="col-sm-4">
+
       </div>
     </div>
-  </div>
-
+  </div> -->
 
   
-    <div class="panel panel-default">
+    <!-- <div class="panel panel-default">
       <div class="panel-body">
         <div class="row">
           <div class="col-sm-4">
@@ -77,7 +49,7 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>   -->
   
   
 </template>

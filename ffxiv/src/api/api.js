@@ -3,8 +3,7 @@ import { HttpClient } from 'aurelia-http-client';
 import { EventAggregator } from 'aurelia-event-aggregator';
 
 //let httpClient = new HttpClient();
-//let characterInfoArray = ['', 'gearsets', 'achievements', 'events', 'tracking', 'achievements_possible', 'achievements_obtained'];
-let characterInfoArray = [''];
+let characterInfoArray = ['', 'gearsets', 'achievements', 'events', 'tracking', 'achievements_possible', 'achievements_obtained'];
 const xivdbNameSearchUri = 'https://xivsync.com/character/search?server=Coeurl&name=';
 const xivdbSpecificUri = 'https://api.xivdb.com/character/';
 
@@ -36,6 +35,7 @@ export class Api {
           //throw error;
         }
       });
+      config.withHeader('accept', 'application/json');
     });
 
     this.searchName = '';

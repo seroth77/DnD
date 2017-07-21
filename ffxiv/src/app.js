@@ -2,6 +2,8 @@ import { inject } from 'aurelia-framework';
 import { Api } from './api/api';
 import { EventAggregator } from 'aurelia-event-aggregator';
 
+//const menuOptions = [''];
+
 @inject(Api, EventAggregator)
 export class App {
   constructor(api, eventAggregator) {
@@ -12,6 +14,21 @@ export class App {
     this.specificCharacter = {};
     this.eventAggregator = eventAggregator;
     this.message = 'Hello World!';
+
+    this.scale = {
+      majorUnit: 20,
+      minorUnit: 0,
+      min: 0,
+      max: 100,
+      vertical: false,
+      ranges: [
+        {
+          from: 0,
+          to: 100,
+          color: '#2798df'
+        }
+      ]
+    };
   }
 
   attached() {

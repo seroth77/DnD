@@ -1,0 +1,42 @@
+<template>
+  <div class="character-header">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="character-header-avatar">
+              <img src="${headerInfo.avatar}" width="70px" alt="${headerInfo.name} avatar image" title="${headerInfo.name}'s avatar image" />
+              ${headerInfo.name}
+            </div>  
+          </div>
+          <div class="col-sm-3">
+            <div class="character-header-race">
+               Race: ${headerInfo.race} (${headerInfo.gender})
+            </div>
+            <div class="character-header-server">
+              Server: ${headerInfo.server}
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="character-header-clan">
+              Clan: ${headerInfo.clan}
+            </div>
+            <div class="character-header-nameday">
+              ${headerInfo.nameday}
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="character-header-city">
+              <img src="${headerInfo.city.icon}" alt="${headerInfo.city.name}" title="${headerInfo.name}'s home city" />
+              ${headerInfo.city.name}
+            </div>
+            <div class="character-header-grand-company">
+              <img src="${headerInfo.grand_company.icon}" alt="${headerInfo.grand_company.name}" title="${headerInfo.name}'s Grand Company ${headerInfo.grand_company.name}" />
+              ${headerInfo.grand_company.rank}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
