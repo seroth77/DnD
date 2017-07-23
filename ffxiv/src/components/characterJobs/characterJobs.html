@@ -4,10 +4,10 @@
 
   <div class="character-jobs">
     <ul class="list-inline">
-      <li repeat.for="classjob of classJobs | objectValues">
-          <div class="character-jobs-icon btn" click.delegate="loadSpecificCharacterJob(classjob.value)">
-            <img src="${classjob.value.data.icon}" width="30px" title="${classjob.value.data.abbr}" alt="icon for ${classjob.value.data.abbr}" />
-            <div class="character-jobs-icon-title">${classjob.value.data.abbr}</div>
+      <li repeat.for="classjob of classJobs">
+          <div class="character-jobs-icon btn" click.delegate="loadSpecificCharacterJob(classjob.role.id)">
+            <img src="${classjob.role.icon}" width="30px" title="${classjob.role.abbr}" alt="icon for ${classjob.role.abbr}" />
+            <div class="character-jobs-icon-title">${classjob.role.abbr}</div>
           </div>
       </li>
     </ul>
