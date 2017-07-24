@@ -14,3 +14,7 @@ body {
 .k-notification-wrap {
   background-color: lightcoral;
 }
+
+.gearset-icon {
+  width: 60px;
+}

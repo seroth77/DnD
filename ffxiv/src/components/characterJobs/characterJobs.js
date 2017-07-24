@@ -2,8 +2,9 @@ import { bindable } from 'aurelia-framework';
 
 export class CharacterJobs {
   @bindable classJobs;
+  @bindable selectedJobCallback;
 
   loadSpecificCharacterJob(obj) {
-    console.log(obj);
+    this.selectedJobCallback({ID: obj});
   }
 }

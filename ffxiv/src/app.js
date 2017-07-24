@@ -14,6 +14,7 @@ export class App {
     this.specificCharacter = {};
     this.eventAggregator = eventAggregator;
     this.message = 'Hello World!';
+    this.gearsetObj = {};
 
     this.scale = {
       majorUnit: 20,
@@ -53,5 +54,18 @@ export class App {
         this.specificCharacter = response;
         console.log(response);
       });
+  }
+
+  getSpecificJob(id) {
+    this.gearsetObj = this.search(id, 'classjob_id', this.specificCharacter.gearsets);
+    console.log(this.gearsetObj);
+  }
+
+  search(nameKey, prop, myArray) {
+    for (let i = 0; i < myArray.length; i++) {
+      if (myArray[i][prop] === nameKey) {
+        return myArray[i];
+      }
+    }
   }
 }

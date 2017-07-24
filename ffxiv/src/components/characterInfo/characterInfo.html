@@ -1,10 +1,35 @@
 <template>
-  <div class="well">
+  <!-- <div class="well">
     <div>
       <img width="300px" class="img-rounded" src="${specificCharacterInfo.portrait}" alt="${specificCharacterInfo.name} portrait" />
     </div>
     <div class="row">
       
     </div>
+  </div> -->
+
+  <div class="character-gear-left">
+    <ul>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_mainhand.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_head.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_body.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_hands.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_waist.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_legs.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_feet.data.icon}" /></li>
+    </ul>
+  </div>
+
+  <div class="chaaracter-gear-right">
+    <ul>
+      <li></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_offhand.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_earrings.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_necklace.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_bracelets.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_ring1.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_ring2.data.icon}" /></li>
+      <li><img class="gearset-icon" src="${specificCharacterInfo.gear.slot_soulcrystal.data.icon}" /></li>
+    </ul>
   </div>
 </template>

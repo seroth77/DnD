@@ -22,7 +22,14 @@
   
   <character-header header-info.bind="specificCharacter.info.data"></character-header>
 
-  <character-jobs class-jobs.bind="specificCharacter.gearsets"></character-jobs>
+  <div class="row">
+    <div class="col-sm-4">
+      <character-jobs selected-job-callback.call="getSpecificJob(ID)" class-jobs.bind="specificCharacter.gearsets"></character-jobs>
+    </div>
+    <div class="col-sm-4">
+      <character-info specific-character-info.bind="gearsetObj"></character-info>
+    </div>
+  </div>
   
   <!-- <div class="characterGeneral">
     <div class="row">
