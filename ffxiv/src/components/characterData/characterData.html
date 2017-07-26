@@ -1,0 +1,7 @@
+<template>
+  <require from="resources/value-converters/objectvalues"></require> 
+
+  <div class="character-data" repeat.for="data of specificCharacterData.stats | objectValues">
+    ${data.key} - ${data.value}
+  </div>
+</template>

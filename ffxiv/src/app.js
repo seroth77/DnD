@@ -1,6 +1,7 @@
 import { inject } from 'aurelia-framework';
 import { Api } from './api/api';
 import { EventAggregator } from 'aurelia-event-aggregator';
+import $ from 'jquery';
 
 //const menuOptions = [''];
 
@@ -66,6 +67,17 @@ export class App {
       if (myArray[i][prop] === nameKey) {
         return myArray[i];
       }
+    }
+  }
+
+  showOption(option) {
+    console.log(option);
+    switch (option) {
+      case 'jobs':
+        $('.character-' + option + '-container' ).toggleClass('hidden');
+        break;
+      default:
+        break;
     }
   }
 }

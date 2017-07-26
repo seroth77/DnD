@@ -18,3 +18,10 @@ body {
 .gearset-icon {
   width: 60px;
 }
+
+.gearset {
+  list-style-type: none;
+}
+.gearset li {
+  padding-top: 10px;
+}
