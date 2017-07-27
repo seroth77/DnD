@@ -25,3 +25,8 @@ body {
 .gearset li {
   padding-top: 10px;
 }
+
+.stat-block span {
+  position: absolute;
+  right: 10px;
+}

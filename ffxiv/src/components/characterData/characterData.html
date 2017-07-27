@@ -1,7 +1,22 @@
 <template>
   <require from="resources/value-converters/objectvalues"></require> 
 
-  <div class="character-data" repeat.for="data of specificCharacterData.stats | objectValues">
-    ${data.key} - ${data.value}
+  <div class="character-data">
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation" click.delegate="showStat(data.key, data.value)" repeat.for="data of specificCharacterData.stats | objectValues">
+        <a href="#">
+          <img width="40px" src="./images/ff14_token_icon.png" alt="Statistics Icon for ${data.key}" title="${data.key} stats" />
+          ${data.key}
+        </a>
+        <div class="stat-block ${data.key}-stat-data hidden">
+          <ul class="list-group">
+            <li class="list-group-item" repeat.for="attribute of attributes | objectValues">
+              <span>${attribute.value}</span>
+              ${attribute.key}
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
   </div>
 </template>
