@@ -8,6 +8,7 @@
   <require from="components/characterHeader/characterHeader"></require>
   <require from="components/characterData/characterData"></require>
   <require from="components/classHealthDisplay/classHealthDisplay"></require>
+  <require from="components/classAttributeDisplay/classAttributeDisplay"></require>
 
   <div class="toastr">
     <ak-notification id="popupNotification" 
@@ -48,6 +49,14 @@
     <div class="col-sm-6">
       <div class="well character-class-health">
         <class-health-display class="health-display" health-data.bind="gearsetObj.stats"></class-health-display>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <class-attribute-display class="attribute-display" attribute-data.bind="gearsetObj.stats"></class-attribute-display>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
       </div>
     </div>
     <div class="col-sm-6">

@@ -3,13 +3,13 @@
   <require from="aurelia-kendoui-bridge/progressbar/progressbar"></require>
 
   <div class="row">
-    <div class="col-sm-4" repeat.for="core of healthData.core | objectValues">
+    <div class="col-sm-4 core-stats" repeat.for="core of healthData.core | objectValues">
       <label>${core.key}</label>
-      <div ak-progress-bar="k-type: value;
-                            k-max: core.value;
+      <div class="${core.key}-coreStat" ak-progress-bar="type: value;
                             k-widget.bind: pb;
                             k-animation.bind: false"
             ak-progress-bar.ref="pbWrapper"
+            k-on-change.delegate="onChange($event.detail)"
             style="width: 100%;">
       </div>
     </div>

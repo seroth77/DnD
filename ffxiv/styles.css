@@ -30,3 +30,22 @@ body {
   position: absolute;
   right: 10px;
 }
+
+.core-stats label {
+  text-transform: uppercase;
+}
+.HP-coreStat .k-progress-status-wrap,
+.hp-coreStat .k-progress-status-wrap {
+  background-color: yellowgreen;
+  font-weight: bold;
+}
+.MP-coreStat .k-progress-status-wrap,
+.mp-coreStat .k-progress-status-wrap {
+  background-color: lightpink;
+  font-weight: bold;
+}
+.TP-coreStat .k-progress-status-wrap,
+.tp-coreStat .k-progress-status-wrap {
+  background-color: orange;
+  font-weight: bold;
+}
