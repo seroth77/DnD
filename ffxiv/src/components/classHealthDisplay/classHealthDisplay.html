@@ -1,0 +1,17 @@
+<template>
+  <require from="resources/value-converters/objectvalues"></require>
+  <require from="aurelia-kendoui-bridge/progressbar/progressbar"></require>
+
+  <div class="row">
+    <div class="col-sm-4" repeat.for="core of healthData.core | objectValues">
+      <label>${core.key}</label>
+      <div ak-progress-bar="k-type: value;
+                            k-max: core.value;
+                            k-widget.bind: pb;
+                            k-animation.bind: false"
+            ak-progress-bar.ref="pbWrapper"
+            style="width: 100%;">
+      </div>
+    </div>
+  </div>
+</template>

@@ -7,6 +7,7 @@
   <require from="components/characterJobs/characterJobs"></require>
   <require from="components/characterHeader/characterHeader"></require>
   <require from="components/characterData/characterData"></require>
+  <require from="components/classHealthDisplay/classHealthDisplay"></require>
 
   <div class="toastr">
     <ak-notification id="popupNotification" 
@@ -21,22 +22,36 @@
   
   <character-header header-info.bind="specificCharacter.info.data"></character-header>
 
+  
+
   <div class="row">
-    <div class="col-sm-4">
+    <!-- <div class="col-sm-4">
       <ul class="nav nav-pills nav-stacked nav-justified">
         <li role="presentation" click.delegate="showOption('jobs')"><a href="#">Jobs</a></li>
       </ul>
-      <div class="character-jobs-container hidden">
+      <div class="character-jobs-container hidden"> -->
         <character-jobs selected-job-callback.call="getSpecificJob(ID)" class-jobs.bind="specificCharacter.gearsets"></character-jobs>
+      <!-- </div>
+    </div> -->
+
+    <!-- <div class="col-sm-4">
+      
+    </div> -->
+
+    <!-- <div class="col-sm-4">
+      <character-data specific-character-data.bind="gearsetObj"></character-data>
+    </div> -->
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="well character-class-health">
+        <class-health-display class="health-display" health-data.bind="gearsetObj.stats"></class-health-display>
       </div>
     </div>
-
-    <div class="col-sm-4">
+    <div class="col-sm-6">
       <character-info specific-character-info.bind="gearsetObj"></character-info>
-    </div>
-
-    <div class="col-sm-4">
-      <character-data specific-character-data.bind="gearsetObj"></character-data>
     </div>
   </div>
 
