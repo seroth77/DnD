@@ -1,0 +1,12 @@
+<template>
+  <require from="resources/value-converters/objectvalues"></require>
+  
+  Offensive Properties
+  <hr/>
+  <ul class="list-group">
+    <li class="list-group-item stat-block" repeat.for="stat of offensiveData.offensive | objectValues">
+      <span>${stat.value}</span>
+      ${stat.key}
+    </li>
+  </ul>
+</template>

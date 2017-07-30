@@ -1,0 +1,12 @@
+<template>
+  <require from="resources/value-converters/objectvalues"></require>
+  
+  Defensive Properties
+  <hr/>
+  <ul class="list-group">
+    <li class="list-group-item stat-block" repeat.for="stat of defensiveData.defensive | objectValues">
+      <span>${stat.value}</span>
+      ${stat.key}
+    </li>
+  </ul>
+</template>

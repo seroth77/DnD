@@ -30,6 +30,9 @@ body {
   position: absolute;
   right: 10px;
 }
+.stat-useless-color {
+  color: lightgray;
+}
 
 .core-stats label {
   text-transform: uppercase;

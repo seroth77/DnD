@@ -1,0 +1,12 @@
+<template>
+  <require from="resources/value-converters/objectvalues"></require>
+  
+  Elemental Resistance
+  <hr/>
+  <ul class="list-group">
+    <li class="list-group-item stat-block" repeat.for="resistance of resistanceData.elemental | objectValues">
+      <span>${resistance.value}</span>
+      ${resistance.key}
+    </li>
+  </ul>
+</template>

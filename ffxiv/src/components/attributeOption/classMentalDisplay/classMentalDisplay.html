@@ -1,0 +1,12 @@
+<template>
+  <require from="resources/value-converters/objectvalues"></require>
+  
+  Mental Properties
+  <hr/>
+  <ul class="list-group">
+    <li class="list-group-item stat-block" repeat.for="stat of mentalData.mental | objectValues">
+      <span>${stat.value}</span>
+      ${stat.key}
+    </li>
+  </ul>
+</template>

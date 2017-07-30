@@ -1,4 +1,5 @@
 import { bindable } from 'aurelia-framework';
+import $ from 'jquery';
 
 export class ClassAttributeDisplay {
   @bindable attributeData;

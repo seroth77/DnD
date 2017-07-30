@@ -1,0 +1,10 @@
+<template>
+  Attributes
+  <hr/>
+  <ul class="list-group">
+    <li class="list-group-item stat-block ${!attribute.color ? 'stat-useless-color' : ''}" repeat.for="attribute of sortedAttributes">
+      <span>${attribute.value}</span>
+      ${attribute.key}
+    </li>
+  </ul>
+</template>

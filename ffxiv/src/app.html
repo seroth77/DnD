@@ -7,8 +7,14 @@
   <require from="components/characterJobs/characterJobs"></require>
   <require from="components/characterHeader/characterHeader"></require>
   <require from="components/characterData/characterData"></require>
-  <require from="components/classHealthDisplay/classHealthDisplay"></require>
-  <require from="components/classAttributeDisplay/classAttributeDisplay"></require>
+
+  <require from="components/attributeOption/classHealthDisplay/classHealthDisplay"></require>
+  <require from="components/attributeOption/classAttributeDisplay/classAttributeDisplay"></require>
+  <require from="components/attributeOption/classResistanceDisplay/classResistanceDisplay"></require>
+  <require from="components/attributeOption/classOffensiveDisplay/classOffensiveDisplay"></require>
+  <require from="components/attributeOption/classDefensiveDisplay/classDefensiveDisplay"></require>
+  <require from="components/attributeOption/classPhysicalDisplay/classPhysicalDisplay"></require>
+  <require from="components/attributeOption/classMentalDisplay/classMentalDisplay"></require>
 
   <div class="toastr">
     <ak-notification id="popupNotification" 
@@ -55,7 +61,25 @@
           <class-attribute-display class="attribute-display" attribute-data.bind="gearsetObj.stats"></class-attribute-display>
         </div>
         <div class="col-sm-6">
+          <class-resistance-display class="resistance-display" resistance-data.bind="gearsetObj.stats"></class-resistance-display>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-sm-6">
+          <class-offensive-display class="offensive-display" offensive-data.bind="gearsetObj.stats"></class-offensive-display>
+        </div>
+        <div class="col-sm-6">
+          <class-defensive-display class="defensive-display" defensive-data.bind="gearsetObj.stats"></class-defensive-display>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <class-physical-display class="physical-display" physical-data.bind="gearsetObj.stats"></class-physical-display>
+        </div>
+        <div class="col-sm-6">
+          <class-mental-display class="mental-display" mental-data.bind="gearsetObj.stats"></class-mental-display>
         </div>
       </div>
     </div>
