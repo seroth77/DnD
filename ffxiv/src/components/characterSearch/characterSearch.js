@@ -1,32 +1,41 @@
-import { bindable } from 'aurelia-framework';
+import { inject, bindable } from 'aurelia-framework';
+import { EventAggregator } from 'aurelia-event-aggregator';
 import $ from 'jquery';
 
+@inject(EventAggregator)
 export class CharacterSearch {
   @bindable getMatchingCharacters;
 
-  searchForUser() {
-    if (this.searchName === undefined) {
-      this.searchError(true);
-      return;
-    }
+  constructor(eventAggregator) {
+    this.eventAggregator = eventAggregator;
+    this.server = "";
+  }
 
-    if (this.searchName.trim() === '') {
-      this.searchError(true);
+  getServer(serverName) {
+    this.server = serverName;
+  }
+
+  searchForUser() {
+    if (this.searchName === undefined || this.searchName.trim() === '') {
+      this.errorHandler('Please enter a name to search.');
       this.searchName = '';
       return;
     }
 
+    if (this.server.trim() === '') {
+      this.errorHandler('Please select a server.');
+      return;
+    }
+
     this.searchError(false);
-    this.getMatchingCharacters({value: this.searchName});
+    let obj = {
+      name: this.searchName,
+      server: this.server
+    };
+    this.getMatchingCharacters({obj});
   }
 
-  searchError(isError) {
-    if (isError) {
-      $('.character-search').addClass('has-error');
-      $('#helpBlockSearch').removeClass('hidden');
-    } else {
-      $('.character-search').removeClass('has-error');
-      $('#helpBlockSearch').addClass('hidden');
-    }
+  errorHandler(msg) {
+    this.eventAggregator.publish('searchRepsonseError', { response: msg });
   }
 }

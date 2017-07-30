@@ -6,6 +6,43 @@ body {
   display: none;
 }
 
+.grey-text {
+  color: darkgray;
+}
+
+/* ------------- */
+
+.wwol-header {
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.name-search-container {
+  padding-top: 10px;
+}
+
+.serverSelector-container label {
+  padding: 0 10px;
+}
+
+#serverSelector {
+  display: inline-block !important;
+  padding-right: 20px;
+}
+
+.character-search label {
+  padding-right: 10px;
+}
+
+ /* --------- */
+
+.wwol-body {
+  margin-top: 60px;
+}
+
 .list-item {
   background-color: lightcoral;
   cursor: pointer;
@@ -26,6 +63,9 @@ body {
   padding-top: 10px;
 }
 
+.stat-block {
+  text-transform: capitalize;
+}
 .stat-block span {
   position: absolute;
   right: 10px;

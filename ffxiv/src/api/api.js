@@ -4,7 +4,8 @@ import { EventAggregator } from 'aurelia-event-aggregator';
 
 //let httpClient = new HttpClient();
 let characterInfoArray = ['', 'gearsets', 'achievements', 'events', 'tracking', 'achievements_possible', 'achievements_obtained'];
-const xivdbNameSearchUri = 'https://xivsync.com/character/search?server=Coeurl&name=';
+//const xivdbNameSearchUri = 'https://xivsync.com/character/search?server=Coeurl&name=';
+const xivdbNameSearchUri = 'https://xivsync.com/character/search?';
 const xivdbSpecificUri = 'https://api.xivdb.com/character/';
 
 @noView()
@@ -48,7 +49,7 @@ export class Api {
   }
 
   getCharacter(params) {
-    return this.httpClient.get(xivdbNameSearchUri + params.Name)
+    return this.httpClient.get(xivdbNameSearchUri + 'server=' + params.Server + '&name=' + params.Name)
       .then(data => {
         console.log(JSON.parse(data.response).data.results);
         return data.response;

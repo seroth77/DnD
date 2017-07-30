@@ -1,10 +1,15 @@
 <template>
-  <div class="row">
+  <require from="components/characterSearch/serverSelect"></require>
+
+  <div class="row name-search-container">
     <div class="col-sm-12">
       <form class="form-inline">
+        <div class="form-group server-search">
+          <server-select get-server.call="getServer(value)"></server-select>
+        </div>
         <div class="form-group character-search">
+          <label>Name</label>
           <input type="text" class="form-control" placeholder="Name to search" value.bind="searchName" aria-describedby="helpBlockSearch">
-          <span id="helpBlockSearch" class="help-block hidden">Please enter a valid name to search.</span>
           <button class="btn btn-default search" click.delegate="searchForUser()">Search</button>
         </div>
       </form>

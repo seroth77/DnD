@@ -10,6 +10,7 @@ export class ClassAttributeDisplay {
 
   attributeDataChanged() {
     if (this.attributeData !== undefined) {
+      this.sortedAttributes = [];
       let attributes = this.attributeData.attributes;
       let sortedKeys = Object.keys(attributes).sort((b, a) => attributes[a] - attributes[b]);
       for (let x = 0; x < sortedKeys.length; x++) {

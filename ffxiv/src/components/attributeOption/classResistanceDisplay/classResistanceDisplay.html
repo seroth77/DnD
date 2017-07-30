@@ -5,8 +5,8 @@
   <hr/>
   <ul class="list-group">
     <li class="list-group-item stat-block" repeat.for="resistance of resistanceData.elemental | objectValues">
-      <span>${resistance.value}</span>
       ${resistance.key}
+      <span>${resistance.value}</span>
     </li>
   </ul>
 </template>

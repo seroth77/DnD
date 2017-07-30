@@ -1,0 +1,13 @@
+<template>
+  <require from="aurelia-kendoui-bridge/autocomplete/autocomplete"></require>
+
+  <div class="serverSelector-container">
+    <label for="serverSelector">Server</label>
+    <ak-autocomplete id="serverSelector" 
+      k-data-source.bind="items" 
+      k-placeholder="Type server name"
+      k-on-select.delegate="onSelect($event.detail)">
+      <input style="width: 100%;">
+    </ak-autocomplete>
+  </div>
+</template>

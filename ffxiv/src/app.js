@@ -35,16 +35,22 @@ export class App {
 
   attached() {
     this.eventAggregator.subscribe('apiRepsonseError', response => {
-      console.log(response);
       this.popupNotification.show('There is no data for this user. Please try again.', 'warning');
+    });
+
+    this.eventAggregator.subscribe('searchRepsonseError', response => {
+      this.popupNotification.show(response.response, 'warning');
     });
   }
 
-  getMatchingCharacters(value) {
+  getMatchingCharacters(obj) {
     this.characterGroup = [];
-    this.api.getCharacter({Name: value.trim().replace(' ', '+')})
+    let apiObj = {
+      Name: obj.name.trim().replace(' ', '+'),
+      Server: obj.server.trim()
+    }
+    this.api.getCharacter(apiObj)
       .then(response => {
-        console.log(response);
         this.characterGroup = JSON.parse(response).data.results;
       });
   }
@@ -53,13 +59,11 @@ export class App {
     this.api.getSpecificUser({ID: id})
       .then(response => {
         this.specificCharacter = response;
-        console.log(response);
       });
   }
 
   getSpecificJob(id) {
     this.gearsetObj = this.search(id, 'classjob_id', this.specificCharacter.gearsets);
-    console.log(this.gearsetObj);
   }
 
   search(nameKey, prop, myArray) {
@@ -71,7 +75,6 @@ export class App {
   }
 
   showOption(option) {
-    console.log(option);
     switch (option) {
       case 'jobs':
         $('.character-' + option + '-container' ).toggleClass('hidden');

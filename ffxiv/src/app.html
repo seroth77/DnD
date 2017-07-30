@@ -23,10 +23,16 @@
       k-widget.bind="popupNotification">TEST</ak-notification>
   </div>
 
-  <character-search get-matching-characters.call="getMatchingCharacters(value)"></character-search>
-
-  <search-list selected-user-callback.call="getSpecificUser(ID)" character-list.bind="characterGroup"></search-list>
+  <div class="wwol-header">
+    <character-search get-matching-characters.call="getMatchingCharacters(obj)"></character-search>
+  </div>
   
+  <div class="wwol-body">
+    <div class="search-results-slider">
+      <search-list selected-user-callback.call="getSpecificUser(ID)" character-list.bind="characterGroup"></search-list>
+    </div>
+  
+
   <character-header header-info.bind="specificCharacter.info.data"></character-header>
 
   
@@ -117,5 +123,5 @@
       </div>
     </div>   -->
   
-  
+  </div>
 </template>
