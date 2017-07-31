@@ -1,14 +1,16 @@
 import { inject } from 'aurelia-framework';
 import { Api } from './api/api';
 import { EventAggregator } from 'aurelia-event-aggregator';
+import { CssAnimator } from 'aurelia-animator-css';
 import $ from 'jquery';
 
 //const menuOptions = [''];
 
-@inject(Api, EventAggregator)
+@inject(Api, EventAggregator, CssAnimator)
 export class App {
-  constructor(api, eventAggregator) {
+  constructor(api, eventAggregator, animator) {
     this.api = api;
+    this.animator = animator;
     this.characterGroup = [];
     this.searchName = '';
     this.stats = {};
@@ -48,7 +50,7 @@ export class App {
     let apiObj = {
       Name: obj.name.trim().replace(' ', '+'),
       Server: obj.server.trim()
-    }
+    };
     this.api.getCharacter(apiObj)
       .then(response => {
         this.characterGroup = JSON.parse(response).data.results;
@@ -76,11 +78,11 @@ export class App {
 
   showOption(option) {
     switch (option) {
-      case 'jobs':
-        $('.character-' + option + '-container' ).toggleClass('hidden');
-        break;
-      default:
-        break;
+    case 'jobs':
+      $('.character-' + option + '-container' ).toggleClass('hidden');
+      break;
+    default:
+      break;
     }
   }
 }

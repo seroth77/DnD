@@ -27,7 +27,7 @@ export class CharacterSearch {
       return;
     }
 
-    this.searchError(false);
+    //this.searchError(false);
     let obj = {
       name: this.searchName,
       server: this.server
