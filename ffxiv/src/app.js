@@ -54,6 +54,8 @@ export class App {
     this.api.getCharacter(apiObj)
       .then(response => {
         this.characterGroup = JSON.parse(response).data.results;
+        let resultBlock = $('.search-results-slider');
+        this.animator.animate(resultBlock, '');
       });
   }
 

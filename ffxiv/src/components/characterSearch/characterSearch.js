@@ -1,6 +1,5 @@
 import { inject, bindable } from 'aurelia-framework';
 import { EventAggregator } from 'aurelia-event-aggregator';
-import $ from 'jquery';
 
 @inject(EventAggregator)
 export class CharacterSearch {
@@ -8,7 +7,7 @@ export class CharacterSearch {
 
   constructor(eventAggregator) {
     this.eventAggregator = eventAggregator;
-    this.server = "";
+    this.server = '';
   }
 
   getServer(serverName) {
